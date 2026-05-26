@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@import "./fonts.css";
+
+@variant dark (&:where(:not(.light), :not(.light) *));
+@variant light (&:where(.light, .light *));
+
+@layer utilities {
+  .font-cursive {
+    font-feature-settings: "salt" 1;
+  }
+}
+
+@theme {
+  /* Colors */
+  --color-primary: #0d2e33;
+  --color-secondary: #e0f5f7;
+
+  /* English fonts */
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Georgia", serif;
+  
+  /* Arabic fonts */
+  --font-ui: "Thmanyah Sans", sans-serif;
+  --font-display: "Thmanyah Display", serif;
+  --font-text: "Thmanyah Text", serif;
+
+  /* Font sizes */
+  --text-huge: 4rem;
+
+  /* Spacing */
+  --spacing-18: 4.5rem;
+
+  /* Breakpoints */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+}
+
+
+/* Dark theme (default) */
+:root {
+  --bg:         #020d0f;
+  --text:       #e0f5f7;
+  --text-muted: #7aaeb5;
+  --accent:     #0ef;
+  --gap:        2rem;
+}
+
+body {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(at 12% 26%, rgb(5, 35, 45)       0px, transparent 50%),
+    radial-gradient(at 48% 55%, hsla(190,78%,12%,1)  0px, transparent 50%),
+    radial-gradient(at 28% 95%, hsla(175,65%,13%,1)  0px, transparent 50%),
+    radial-gradient(at 42% 60%, hsla(200,70%,13%,1)  0px, transparent 50%),
+    radial-gradient(at 62% 19%, hsla(185,81%,12%,1)  0px, transparent 50%),
+    radial-gradient(at 79% 79%, hsla(195,71%,13%,1)  0px, transparent 50%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* Light theme */
+:root.light {
+  --bg:         #f0fbfc;
+  --text:       #0d2e33;
+  --text-muted: #4a8a93;
+  --accent:     #0099aa;
+}
+
+body:has(~ *) ,
+:root.light body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+:root.light body {
+  background-image:
+    radial-gradient(at 12% 26%, rgb(205, 240, 245)      0px, transparent 50%),
+    radial-gradient(at 48% 55%, hsla(190,78%,88%,1)     0px, transparent 50%),
+    radial-gradient(at 28% 95%, hsla(175,65%,87%,1)     0px, transparent 50%),
+    radial-gradient(at 42% 60%, hsla(200,70%,87%,1)     0px, transparent 50%),
+    radial-gradient(at 62% 19%, hsla(185,81%,88%,1)     0px, transparent 50%),
+    radial-gradient(at 79% 79%, hsla(195,71%,87%,1)     0px, transparent 50%);
+}
+
+
+/*header*/
+.dropdown-wrap:hover .dropdown-panel {
+  display: block;
+}
+/*........*/
+
+/* home/random projects */
+@keyframes shimmer {
+  0%   { background-position: -700px 0; }
+  100% { background-position: 700px 0; }
+}
+
+.img-skeleton {
+  background: linear-gradient(90deg, #1a1a1a 25%, #2a2a2a 50%, #1a1a1a 75%);
+  background-size: 700px 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+/*......*/
+
+/* home/projects-section */
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 14s linear infinite;
+}
+/*......*/
+
+
+
+/* home/profile image */
+@keyframes pulse-soft {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,255,255,0.15); }
+  50%       { box-shadow: 0 0 0 6px rgba(255,255,255,0); }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+/*......*/
+
+/* projects page */
+.project-card {
+  transition: opacity 0.25s ease, transform 0.25s ease, box-shadow 0.3s ease;
+}
+.project-card.hidden-card {
+  display: none;
+}
+/*.....*/
+
+
+/* Loading */

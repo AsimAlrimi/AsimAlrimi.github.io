@@ -1,0 +1,12 @@
+header:
+  nav:
+    home: Home
+    projects: Projects
+    aboutme: About Me
+
+  dropdown:
+    title: More
+    skills: Skills
+    certs: Certs & Courses
+    services: Services
+    contact: Contact

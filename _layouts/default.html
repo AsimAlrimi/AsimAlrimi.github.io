@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}" dir="{% if page.lang == 'ar' %}rtl{% else %}ltr{% endif %}">
+  <head>
+<script>
+  if (localStorage.getItem('theme') === 'light') {
+    document.documentElement.classList.add('light');
+  }
+</script>
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&display=swap" rel="stylesheet">
+    <link href="/assets/css/app.css" rel="stylesheet">
+  </head>
+  <body>
+    {% include header.html %}
+
+    {{ content }}
+    
+    {% include footer.html %}
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

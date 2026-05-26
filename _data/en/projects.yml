@@ -1,0 +1,94 @@
+items:
+  - title: Backdoor
+    description: Modern portfolio and business showcase web application built with React and Tailwind CSS to present projects, services, and digital solutions through a clean and responsive interface. The platform focuses on professional presentation, smooth user experience, and strong visual identity, featuring animated sections, project showcases, service highlights, and a streamlined contact experience that helps potential clients connect quickly and efficiently. Designed with a modern UI approach to improve engagement, readability, and accessibility across desktop and mobile devices.
+    images:
+      - /assets/images/projects/back1.png
+      - /assets/images/projects/back2.png
+      - /assets/images/projects/back3.png
+    link: ""
+    tags:
+      - React
+      - Tailwind CSS
+      - Responsive Design
+    year: 2025
+    link_type: demo
+
+  - title: NEXA
+    description: Modern business platform built with ASP.NET Core to showcase tailored digital solutions, professional services, and company projects through a clean and responsive user experience. The website features a dynamic landing page with service highlights, trust-focused sections, portfolio showcases, and contact forms designed to help businesses connect with potential clients and generate leads. Includes a secure admin dashboard for managing portfolio projects, updating content, editing showcased services, and handling website data through a streamlined content management interface.
+    images:
+      - /assets/images/projects/nexa1.png
+      - /assets/images/projects/nexa2.png
+      - /assets/images/projects/nexa3.png
+    link: ""
+    tags:
+      - ASP.NET Core
+      - MVC
+      - Entity Framework Core
+      - SQL Server
+    year: 2025
+    link_type: demo
+
+  - title: SooqLink
+    description: B2B wholesale marketplace platform currently in development, designed to connect sellers with buyers such as grocery stores, restaurants, hotels, cafés, stationery stores, and individual customers through a centralized digital marketplace. Built with ASP.NET Core using a layered architecture and role-based access for Admins, Sellers, and Buyers. Features include product and inventory management, bulk ordering, shopping cart functionality, order tracking, analytics dashboards, category management, and administrative moderation tools.
+    images:
+      - /assets/images/profileImage.jpg
+      - /assets/images/profileImage.jpg
+      - /assets/images/profileImage.jpg
+    link: "https://github.com/AsimAlrimi/SooqLink.git"
+    tags:
+      - ASP.NET Core
+      - MVC
+      - Entity Framework Core
+      - SQL Server
+      - Role-Based Access
+    year: 2025
+    link_type: github
+  
+  - title: Blood Line
+    description: Comprehensive blood donation management platform built using a client-server architecture to connect donors, hospitals, and blood banks through mobile and desktop applications. Developed with Flutter, Flask, and RESTful APIs, the system streamlines appointment scheduling, donation tracking, blood drive management, and donor communication. Features include JWT authentication, role-based functionality, Google Maps integration for locating nearby donation centers, notifications for urgent blood needs, donation history tracking, and secure backend API testing with Postman.
+    images:
+      - /assets/images/projects/blood1.png
+      - /assets/images/projects/blood2.png
+      - /assets/images/projects/blood3.png
+      - /assets/images/projects/blood4.png
+      - /assets/images/projects/blood5.png
+    link: "https://github.com/AsimAlrimi/blood-line-mobile.git"
+    tags:
+      - Flutter
+      - Flask
+      - REST API
+      - JWT
+      - Client-Server
+      - SQLite
+      - Postman
+    year: 2024
+    link_type: github
+    
+  - title: Bookify
+    description: Flutter-based book rental application designed to help users browse, search, and rent books through a clean and modern mobile interface. The platform includes role-based functionality for Users and Admins, allowing admins to manage books, upload cover images, update availability status, and oversee rental orders. Features include book search, detailed book pages, rental history tracking, SQLite local storage, and state management using Riverpod for a responsive and scalable user experience.
+    images:
+      - /assets/images/projects/book1.png
+      - /assets/images/projects/book2.png
+    link: "https://github.com/AsimAlrimi/bookify.git"
+    tags:
+      - Flutter
+      - Dart
+      - SQLite
+      - Role-Based Access
+
+    year: 2024
+    link_type: github
+
+  - title: Search Algorithm Visualizer
+    description: Interactive Python application built with Tkinter to visualize binary tree traversal algorithms through real-time animations and dynamic node highlighting. The project demonstrates how Breadth-First Search (BFS) and Depth-First Search (DFS) operate on a binary tree structure, allowing users to select target nodes and observe the traversal process step-by-step through an intuitive graphical interface.
+    images:
+      - /assets/images/projects/bst1.png
+      - /assets/images/projects/bst2.png
+      - /assets/images/projects/bst3.png
+    link: "https://github.com/AsimAlrimi/search-algorithm-visualizer.git"
+    tags:
+      - Python
+      - Tkinter
+      - Algorithm Visualization
+    year: 2024
+    link_type: github

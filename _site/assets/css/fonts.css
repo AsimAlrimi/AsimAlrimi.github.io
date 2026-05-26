@@ -1,0 +1,89 @@
+/* =========================
+   Arabic Font
+========================= */
+
+/* Example: class"font-ui font-normal" */
+
+/* ─── Thmanyah Sans (5 weights) font-thin, font-light, font-normal, font-medium, font-bold, font-black ─── */
+/* Sans for UI/navbar/buttons */
+@font-face {
+  font-family: "Thmanyah Sans";
+  src: url("../fonts/thmanyahsans/otf/thmanyahsans-Thin.otf") format("opentype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Thmanyah Sans";
+  src: url("../fonts/thmanyahsans/otf/thmanyahsans-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Thmanyah Sans";
+  src: url("../fonts/thmanyahsans/otf/thmanyahsans-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Thmanyah Sans";
+  src: url("../fonts/thmanyahsans/otf/thmanyahsans-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Thmanyah Sans";
+  src: url("../fonts/thmanyahsans/otf/thmanyahsans-Black.otf") format("opentype");
+  font-weight: 900;
+}
+
+/* ─── Thmanyah Serif Display (5 weights) ─── */
+/* SerifDisplay for hero titles */
+@font-face {
+  font-family: "Thmanyah Display";
+  src: url("../fonts/thmanyahserifdisplay/otf/thmanyahserifdisplay-Thin.otf") format("opentype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Thmanyah Display";
+  src: url("../fonts/thmanyahserifdisplay/otf/thmanyahserifdisplay-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Thmanyah Display";
+  src: url("../fonts/thmanyahserifdisplay/otf/thmanyahserifdisplay-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Thmanyah Display";
+  src: url("../fonts/thmanyahserifdisplay/otf/thmanyahserifdisplay-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Thmanyah Display";
+  src: url("../fonts/thmanyahserifdisplay/otf/thmanyahserifdisplay-Black.otf") format("opentype");
+  font-weight: 900;
+}
+
+/* ─── Thmanyah Serif Text (5 weights) ─── */
+/* SerifText for article text */
+@font-face {
+  font-family: "Thmanyah Text";
+  src: url("../fonts/thmanyahseriftext/otf/thmanyahseriftext-Thin.otf") format("opentype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Thmanyah Text";
+  src: url("../fonts/thmanyahseriftext/otf/thmanyahseriftext-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Thmanyah Text";
+  src: url("../fonts/thmanyahseriftext/otf/thmanyahseriftext-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Thmanyah Text";
+  src: url("../fonts/thmanyahseriftext/otf/thmanyahseriftext-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Thmanyah Text";
+  src: url("../fonts/thmanyahseriftext/otf/thmanyahseriftext-Black.otf") format("opentype");
+  font-weight: 900;
+}

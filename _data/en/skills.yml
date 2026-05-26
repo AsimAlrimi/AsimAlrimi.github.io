@@ -1,0 +1,87 @@
+categories:
+  - name: Languages
+    skills:
+      - name: JavaScript
+        icon: brand-javascript
+        desc: My daily driver — ES6+, async patterns, and DOM manipulation
+      - name: TypeScript
+        icon: brand-typescript
+        desc: How I write JS when things need to stay sane at scale
+      - name: Python
+        icon: brand-python
+        desc: Go-to for scripting, automation, and backend work
+      - name: C++
+        icon: code
+        desc: Where I learned to think about memory and performance
+
+  - name: Frontend
+    skills:
+      - name: React
+        icon: brand-react
+        desc: My main UI framework — hooks, context, and component design
+      - name: Tailwind CSS
+        icon: brand-tailwind
+        desc: How I style things — utility-first, no fighting the cascade
+      - name: HTML
+        icon: brand-html5
+        desc: The foundation — semantic, accessible, done right
+      - name: CSS
+        icon: brand-css3
+        desc: Layouts, keyframe animations, and custom properties
+
+  - name: Backend
+    skills:
+      - name: Node.js
+        icon: brand-nodejs
+        desc: Fast, event-driven servers — pairs well with my JS frontend work
+      - name: Django
+        icon: server
+        desc: Python's batteries-included framework, great for data-heavy apps
+      - name: Flask
+        icon: flask
+        desc: Lightweight and flexible — when Django is overkill
+      - name: ASP.NET
+        icon: server-2
+        desc: C# web framework — used it for enterprise-grade MVC projects
+      - name: REST APIs
+        icon: plug-connected
+        desc: Designing clean, versioned APIs is something I care about
+
+  - name: Database
+    skills:
+      - name: PostgreSQL
+        icon: database
+        desc: My preferred relational DB — powerful queries, reliable at scale
+      - name: SQL Server
+        icon: database
+        desc: T-SQL and stored procedures from university and early projects
+      - name: SQLite
+        icon: database
+        desc: Lightweight and embedded — perfect for local and mobile apps
+
+  - name: Mobile
+    skills:
+      - name: Flutter
+        icon: device-mobile
+        desc: Cross-platform mobile development with a single codebase
+      - name: Dart
+        icon: brand-dart
+        desc: Flutter's language — typed, fast, and surprisingly enjoyable
+
+  - name: Tools
+    skills:
+      - name: Git
+        icon: brand-git
+        desc: Can't work without it — branching, rebasing, keeping history clean
+      - name: GitHub
+        icon: brand-github
+        desc: Where my code lives — PRs, Actions, and open source contributions
+      - name: Docker
+        icon: brand-docker
+        desc: Containers keep environments consistent across machines
+      - name: Linux
+        icon: terminal-2
+        desc: My preferred environment — CLI, shell scripts, and server management
+      - name: VS Code
+        icon: brand-vscode
+        desc: My editor of choice — extensions, shortcuts, and a clean setup

@@ -1,0 +1,61 @@
+hero:
+  greeting: "هلا ~ أنا عاصم، مطوّر برمجيات"
+  title: "أبني منتجات، مو بس مشاريع."
+
+featured_section:
+  title: "المشاريع المميزة"
+  view: "عرض الكل"
+featured:
+  - title: Backdoor
+    year: 2025
+    description: موقع أعمال حديث يعرض الخدمات الرقمية والحلول المصممة لتلبية احتياجات العملاء.
+    image: /assets/images/featureProjects/back1.png
+    technologies:
+      - React
+      - Tailwind Css
+
+  - title: NEXA
+    year: 2025
+    description: موقع صُمم لعرض الحلول الرقمية المخصصة ودعم نمو الأعمال من خلال تصميم أنيق وتجربة مستخدم سلسة.
+    image: /assets/images/featureProjects/nexa1.png
+    technologies:
+      - ASP.NET
+      - SQL Server
+      - Bootstrap
+
+  - title: Blood Line
+    year: 2025
+    description: منصة للتبرع بالدم تربط بين المتبرعين والمرضى.
+    image: /assets/images/featureProjects/blood1.png
+    technologies:
+      - Flutter
+      - Flask
+
+cards:
+  - title: الشهادات
+    description: شهادات في السحابة والويب والبرمجيات حصلت عليها على طول الطريق.
+    image: /assets/images/highlight-card/image.png
+    link: /ar/certs
+
+  - title: الأدوات والمهارات
+    description: اللغات والأطر والأدوات التي أعمل بها يومياً.
+    image: /assets/images/highlight-card/image2.png
+    link: /ar/skills
+
+more_section:
+  title: "المزيد"
+more:
+  - title: عنّي
+    description: من أنا، وما الذي بنيته، وما الذي يحرّكني.
+    image: /assets/images/profileImage.jpg
+    link: /ar/aboutme
+
+  - title: الخدمات
+    description: ما أقدّمه — من تطوير فول-ستاك إلى الاستشارات التقنية.
+    image: /assets/images/profileImage.jpg
+    link: /ar/services
+
+  - title: تواصل معي
+    description: هل لديك مشروع في ذهنك؟ لنتحدث.
+    image: /assets/images/profileImage.jpg
+    link: /ar/aboutme#Contact

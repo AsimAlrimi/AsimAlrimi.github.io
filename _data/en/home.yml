@@ -1,0 +1,62 @@
+hero:
+  greeting: "HI ~ I'M Asim, A Full-Stack Developer"
+  title: "Building products not just projects."
+
+featured_section:
+  title: "Featured Projects"
+  view: "View all"
+featured:
+  - title: Backdoor
+    year: 2025
+    description: Modern business website showcasing digital services, innovation, and client-focused solutions.
+    image: /assets/images/featureProjects/back1.png
+    technologies:
+      - React
+      - Tailwind Css
+
+  - title: NEXA
+    year: 2025
+    description: Modern website built to showcase tailored digital solutions and support business growth through clean design and seamless user experience.
+    image: /assets/images/featureProjects/nexa1.png
+    technologies:
+      - ASP.NET Core
+      - SQL Server
+      - Bootstrap
+    
+  - title: Blood Line
+    year: 2025
+    description: A blood donation platform connecting donors and patients.
+    image: /assets/images/featureProjects/blood1.png
+    technologies:
+      - Flutter
+      - Flask
+
+cards:
+  - title: Certifications
+    description: Cloud, web, and software certifications I've earned along the way.
+    image: /assets/images/highlight-card/image.png
+    link: /certs
+
+  - title: Tools & Skills
+    description: Languages, frameworks, and tools I work with day to day.
+    image: /assets/images/highlight-card/image2.png
+    link: /skills
+
+
+more_section:
+  title: "More"
+more:
+  - title: About Me
+    description: Who I am, what I've built, and what drives me.
+    image: /assets/images/profileImage.jpg
+    link: /aboutme
+
+  - title: Services
+    description: What I offer — from full-stack development to technical consulting.
+    image: /assets/images/profileImage.jpg
+    link: /services
+
+  - title: Contact
+    description: Have a project in mind? Let's talk.
+    image: /assets/images/profileImage.jpg
+    link: /aboutme#Contact

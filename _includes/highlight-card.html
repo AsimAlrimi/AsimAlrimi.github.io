@@ -1,0 +1,24 @@
+<a href="{{ include.card.link }}"
+   class="group flex flex-col overflow-hidden rounded-2xl transition-all duration-300 light:bg-primary/8 bg-white/5 backdrop-blur-lg border-t border-white/10">
+
+  <div class="mx-3 mt-3 h-60 overflow-hidden rounded-xl light:bg-primary/8 bg-primary">
+
+    <img src="{{ include.card.image }}"
+         alt="{{ include.card.title }}"
+         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+
+  </div>
+
+  <div class="flex  flex-col p-5 gap-1.5">
+
+    <h3 class="font-semibold text-lg leading-snug  {% if include.lang == 'ar' %}font-text{% else %}font-sans{% endif %}">
+      {{ include.card.title }}
+    </h3>
+
+    <p class="text-sm light:text-neutral-500  text-neutral-400 leading-relaxed  {% if include.lang == 'ar' %}font-text{% else %}font-sans{% endif %}">
+      {{ include.card.description }}
+    </p>
+
+  </div>
+
+</a>

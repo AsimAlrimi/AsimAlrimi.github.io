@@ -1,0 +1,12 @@
+header:
+  nav:
+    home: الرئيسية
+    projects: المشاريع
+    aboutme: عنّي
+
+  dropdown:
+    title: المزيد
+    skills: المهارات
+    certs: الشهادات والدورات
+    services: الخدمات
+    contact: تواصل معي
