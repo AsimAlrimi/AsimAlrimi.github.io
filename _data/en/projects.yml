@@ -31,9 +31,9 @@ items:
   - title: SooqLink
     description: B2B wholesale marketplace platform currently in development, designed to connect sellers with buyers such as grocery stores, restaurants, hotels, cafés, stationery stores, and individual customers through a centralized digital marketplace. Built with ASP.NET Core using a layered architecture and role-based access for Admins, Sellers, and Buyers. Features include product and inventory management, bulk ordering, shopping cart functionality, order tracking, analytics dashboards, category management, and administrative moderation tools.
     images:
-      - /assets/images/profileImage.jpg
-      - /assets/images/profileImage.jpg
-      - /assets/images/profileImage.jpg
+      - /assets/images/projects/sooq1.png
+      - /assets/images/projects/sooq2.png
+
     link: "https://github.com/AsimAlrimi/SooqLink.git"
     tags:
       - ASP.NET Core

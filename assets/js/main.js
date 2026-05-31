@@ -1,17 +1,21 @@
 // header // 
+function updateThemeIcons(isLight) {
+  ['icon-moon', 'icon-moon-m'].forEach(id =>
+    document.getElementById(id)?.classList.toggle('hidden', isLight)
+  );
+
+  ['icon-sun', 'icon-sun-m'].forEach(id =>
+    document.getElementById(id)?.classList.toggle('hidden', !isLight)
+  );
+}
+
 function toggleTheme() {
   const isLight = document.documentElement.classList.toggle('light');
   localStorage.setItem('theme', isLight ? 'light' : 'dark');
-  document.getElementById('icon-moon').classList.toggle('hidden', isLight);
-  document.getElementById('icon-sun').classList.toggle('hidden', !isLight);
+  updateThemeIcons(isLight);
 }
-// On page load, sync the icon to match the saved theme
-(function () {
-  if (localStorage.getItem('theme') === 'light') {
-    document.getElementById('icon-moon').classList.add('hidden');
-    document.getElementById('icon-sun').classList.remove('hidden');
-  }
-})();
+
+updateThemeIcons(localStorage.getItem('theme') === 'light');
 
 function toggleLang() {
   const currentPath = window.location.pathname;

@@ -7,12 +7,4 @@ items:
       - Responsive layouts & components
       - SEO & performance optimization
       - Analytics & monitoring setup
-
-  - title: Mobile Development
-    icon: device-mobile
-    description: Crafting native and cross-platform iOS & Android apps with smooth performance and engaging UI.
-    why: Reach users where they spend the most time—mobile apps boost retention, allow push notifications, and strengthen brand loyalty.
-    deliverables:
-      - Wireframes & interactive prototypes
-      - Fully tested production-ready app
-      - App Store & Play Store submission
+       

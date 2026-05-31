@@ -1,24 +1,18 @@
 items:
-  - title: AWS Certified Developer
-    link: #
-    image: /assets/images/profileImage.jpg
-    year: 2024
-    description: Associate-level certification covering AWS core services, deployment, and best practices.
+  - title: IBM Full Stack Software Developer
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/HE1TTK17Q8TC"
+    image: /assets/images/cerit/ibm.png
+    year: 2025
+    description: Professional Certificate covering full-stack development, cloud-native applications, DevOps, CI/CD, Docker, Kubernetes, React, Node.js, Python, databases, microservices, and SaaS deployment.
 
-  - title: Google UX Design
-    link: #
-    image: /assets/images/profileImage.jpg
-    year: 2023
-    description: Professional certificate covering the full UX design process from research to prototyping.
-    
-  - title: AWS Certified Developer
-    link: #
-    image: /assets/images/profileImage.jpg
-    year: 2024
-    description: Associate-level certification covering AWS core services, deployment, and best practices.
+  - title: Software Design and Architecture
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/KM4JTJU5U714"
+    image: /assets/images/cerit/alb.png
+    year: 2025
+    description: Specialization focused on software design principles, design patterns, system architecture, and building maintainable, scalable applications through a hands-on capstone project.
 
-  - title: Google UX Design
-    link: #
-    image: /assets/images/profileImage.jpg
-    year: 2023
-    description: Professional certificate covering the full UX design process from research to prototyping.
+  - title: Developing APIs with Google Cloud Apigee
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/DOV4U47L6ULR"
+    image: /assets/images/cerit/google.png
+    year: 2025
+    description: Specialization covering API design, development, security, publishing, and lifecycle management using Google Cloud's Apigee API Platform.

@@ -1,87 +1,116 @@
 categories:
   - name: Languages
     skills:
-      - name: JavaScript
-        icon: brand-javascript
-        desc: My daily driver — ES6+, async patterns, and DOM manipulation
-      - name: TypeScript
-        icon: brand-typescript
-        desc: How I write JS when things need to stay sane at scale
       - name: Python
         icon: brand-python
-        desc: Go-to for scripting, automation, and backend work
-      - name: C++
+        desc: My primary language for backend development, automation, and scripting
+
+      - name: C#
         icon: code
-        desc: Where I learned to think about memory and performance
+        desc: Used for ASP.NET Core applications and enterprise-style web projects
 
-  - name: Frontend
-    skills:
-      - name: React
-        icon: brand-react
-        desc: My main UI framework — hooks, context, and component design
-      - name: Tailwind CSS
-        icon: brand-tailwind
-        desc: How I style things — utility-first, no fighting the cascade
-      - name: HTML
+      - name: Dart
+        icon: brand-flutter
+        desc: Flutter's language for building cross-platform applications
+
+      - name: JavaScript
+        icon: brand-javascript
+        desc: Used for interactive web experiences and frontend functionality
+
+      - name: HTML & CSS
         icon: brand-html5
-        desc: The foundation — semantic, accessible, done right
-      - name: CSS
-        icon: brand-css3
-        desc: Layouts, keyframe animations, and custom properties
+        desc: Building responsive, accessible, and modern web interfaces
 
-  - name: Backend
+  - name: Frameworks
     skills:
-      - name: Node.js
-        icon: brand-nodejs
-        desc: Fast, event-driven servers — pairs well with my JS frontend work
-      - name: Django
-        icon: server
-        desc: Python's batteries-included framework, great for data-heavy apps
+      - name: ASP.NET Core
+        icon: server-2
+        desc: Building MVC applications, authentication systems, and REST APIs
+
       - name: Flask
         icon: flask
-        desc: Lightweight and flexible — when Django is overkill
-      - name: ASP.NET
-        icon: server-2
-        desc: C# web framework — used it for enterprise-grade MVC projects
-      - name: REST APIs
-        icon: plug-connected
-        desc: Designing clean, versioned APIs is something I care about
+        desc: Lightweight Python framework for APIs and backend services
 
-  - name: Database
-    skills:
-      - name: PostgreSQL
-        icon: database
-        desc: My preferred relational DB — powerful queries, reliable at scale
-      - name: SQL Server
-        icon: database
-        desc: T-SQL and stored procedures from university and early projects
-      - name: SQLite
-        icon: database
-        desc: Lightweight and embedded — perfect for local and mobile apps
-
-  - name: Mobile
-    skills:
       - name: Flutter
         icon: device-mobile
-        desc: Cross-platform mobile development with a single codebase
-      - name: Dart
-        icon: brand-dart
-        desc: Flutter's language — typed, fast, and surprisingly enjoyable
+        desc: Cross-platform development from a single codebase
 
-  - name: Tools
+      - name: Tailwind CSS
+        icon: brand-tailwind
+        desc: Utility-first styling for modern and responsive interfaces
+
+      - name: Bootstrap 5
+        icon: layout-grid
+        desc: Rapid UI development with reusable components and layouts
+
+  - name: Databases
     skills:
+      - name: MySQL
+        icon: database
+        desc: Relational database design, queries, and application integration
+
+      - name: SQLite
+        icon: database
+        desc: Lightweight database commonly used in mobile and local applications
+
+      - name: SQL Server
+        icon: database
+        desc: Experience with relational database design and T-SQL queries
+
+  - name: APIs & Tools
+    skills:
+      - name: REST APIs
+        icon: plug-connected
+        desc: Designing and integrating RESTful services between applications
+
+      - name: Postman
+        icon: send
+        desc: API testing, debugging, and endpoint validation
+
       - name: Git
         icon: brand-git
-        desc: Can't work without it — branching, rebasing, keeping history clean
+        desc: Version control, branching, and collaborative workflows
+
       - name: GitHub
         icon: brand-github
-        desc: Where my code lives — PRs, Actions, and open source contributions
-      - name: Docker
-        icon: brand-docker
-        desc: Containers keep environments consistent across machines
+        desc: Repository hosting, pull requests, and project collaboration
+
+  - name: Platforms
+    skills:
       - name: Linux
         icon: terminal-2
-        desc: My preferred environment — CLI, shell scripts, and server management
-      - name: VS Code
-        icon: brand-vscode
-        desc: My editor of choice — extensions, shortcuts, and a clean setup
+        desc: Comfortable working with the command line and server environments
+
+      - name: Google Cloud Apigee
+        icon: cloud
+        desc: Experience with API management and cloud-based API services
+
+  - name: Concepts
+    skills:
+      - name: MVC Architecture
+        icon: hierarchy
+        desc: Structuring applications with clear separation of concerns
+
+      - name: Role-Based Access Control
+        icon: shield-lock
+        desc: Implementing authorization and permission management systems
+
+      - name: Authentication & Authorization
+        icon: lock
+        desc: Experience with ASP.NET Identity and secure user management
+
+      - name: Cross-Platform Development
+        icon: devices
+        desc: Building applications that run across multiple platforms
+
+      - name: Responsive Design
+        icon: device-desktop
+        desc: Creating interfaces that adapt to different screen sizes
+
+      - name: Object-Oriented Programming
+        icon: hierarchy
+        desc: Applying OOP principles to build maintainable applications
+
+      - name: Problem Solving
+        icon: puzzle
+        desc: Practicing algorithms and data structures through coding challenges

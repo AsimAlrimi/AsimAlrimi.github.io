@@ -1,0 +1,18 @@
+items:
+  - title: IBM Full Stack Software Developer
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/HE1TTK17Q8TC"
+    image: /assets/images/cerit/ibm.png
+    year: 2025
+    description: شهادة احترافية تغطي تطوير التطبيقات متكاملة (Full-Stack)، والتطبيقات السحابية، وعمليات DevOps وCI/CD، مع استخدام Docker وKubernetes وReact وNode.js وPython، بالإضافة إلى قواعد البيانات، المعمارية الدقيقة (Microservices)، ونشر تطبيقات SaaS على السحابة.
+
+  - title: Software Design and Architecture
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/KM4JTJU5U714"
+    image: /assets/images/cerit/alb.png
+    year: 2025
+    description: تخصص يركز على مبادئ تصميم البرمجيات، وأنماط التصميم، ومعمارية الأنظمة، وبناء تطبيقات قابلة للتوسع وسهلة الصيانة من خلال مشروع تطبيقي (Capstone).
+
+  - title: Developing APIs with Google Cloud Apigee
+    link: "https://www.coursera.org/account/accomplishments/specialization/certificate/DOV4U47L6ULR"
+    image: /assets/images/cerit/google.png
+    year: 2025
+    description: تخصص يغطي تصميم وتطوير وتأمين ونشر وإدارة دورة حياة واجهات برمجية (APIs) باستخدام منصة Google Cloud Apigee.

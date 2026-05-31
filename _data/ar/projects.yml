@@ -1,0 +1,94 @@
+items:
+  - title: Backdoor
+    description: منصة حديثة لعرض الأعمال والخدمات تم تطويرها باستخدام React وTailwind CSS لعرض المشاريع والحلول الرقمية من خلال واجهة نظيفة ومتجاوبة. تركز المنصة على تقديم تجربة مستخدم سلسة وهوية بصرية احترافية، مع أقسام تفاعلية وعروض للمشاريع والخدمات وصفحة تواصل مبسطة تساعد العملاء المحتملين على الوصول بسهولة. تم تصميمها بأسلوب عصري يعزز التفاعل وسهولة القراءة وإمكانية الوصول عبر أجهزة الحاسب والجوال.
+    images:
+      - /assets/images/projects/back1.png
+      - /assets/images/projects/back2.png
+      - /assets/images/projects/back3.png
+    link: ""
+    tags:
+      - React
+      - Tailwind CSS
+      - Responsive Design
+    year: 2025
+    link_type: demo
+
+  - title: NEXA
+    description: منصة أعمال حديثة مطورة باستخدام ASP.NET Core لعرض الحلول الرقمية والخدمات الاحترافية ومشاريع الشركة من خلال تجربة مستخدم نظيفة ومتجاوبة. تتضمن صفحة رئيسية ديناميكية تستعرض الخدمات والمشاريع وعناصر تعزز الثقة ونماذج تواصل تساعد الشركات على جذب العملاء المحتملين. كما تحتوي على لوحة تحكم آمنة لإدارة المشاريع والمحتوى والخدمات المعروضة من خلال واجهة إدارة مبسطة.
+    images:
+      - /assets/images/projects/nexa1.png
+      - /assets/images/projects/nexa2.png
+      - /assets/images/projects/nexa3.png
+    link: ""
+    tags:
+      - ASP.NET Core
+      - MVC
+      - Entity Framework Core
+      - SQL Server
+    year: 2025
+    link_type: demo
+
+  - title: SooqLink
+    description: منصة تجارة جملة بين الشركات (B2B) قيد التطوير، تهدف إلى ربط البائعين بالمشترين مثل متاجر البقالة والمطاعم والفنادق والمقاهي ومحلات القرطاسية والأفراد عبر سوق إلكتروني موحد. تم تطويرها باستخدام ASP.NET Core وبنية متعددة الطبقات مع نظام صلاحيات للأدمن والبائعين والمشترين. تشمل إدارة المنتجات والمخزون، والطلبات بالجملة، وسلة التسوق، وتتبع الطلبات، ولوحات التحليلات، وإدارة التصنيفات، وأدوات الإشراف والإدارة.
+    images:
+      - /assets/images/projects/sooq1.png
+      - /assets/images/projects/sooq2.png
+
+    link: "https://github.com/AsimAlrimi/SooqLink.git"
+    tags:
+      - ASP.NET Core
+      - MVC
+      - Entity Framework Core
+      - SQL Server
+      - Role-Based Access
+    year: 2025
+    link_type: github
+  
+  - title: Blood Line
+    description: منصة متكاملة لإدارة التبرع بالدم تعتمد على بنية العميل والخادم، وتهدف إلى ربط المتبرعين بالمستشفيات وبنوك الدم عبر تطبيقات للجوال وسطح المكتب. تم تطويرها باستخدام Flutter وFlask وREST APIs لتسهيل حجز المواعيد وتتبع التبرعات وإدارة حملات التبرع والتواصل مع المتبرعين. تتضمن نظام مصادقة JWT وصلاحيات متعددة للمستخدمين، وتكاملاً مع خرائط Google لتحديد أقرب مراكز التبرع، وإشعارات للحالات الطارئة، وسجلًا للتبرعات، واختبارًا آمناً للواجهات البرمجية باستخدام Postman.
+    images:
+      - /assets/images/projects/blood1.png
+      - /assets/images/projects/blood2.png
+      - /assets/images/projects/blood3.png
+      - /assets/images/projects/blood4.png
+      - /assets/images/projects/blood5.png
+    link: "https://github.com/AsimAlrimi/blood-line-mobile.git"
+    tags:
+      - Flutter
+      - Flask
+      - REST API
+      - JWT
+      - Client-Server
+      - SQLite
+      - Postman
+    year: 2024
+    link_type: github
+    
+  - title: Bookify
+    description: تطبيق لتأجير الكتب مبني باستخدام Flutter يتيح للمستخدمين تصفح الكتب والبحث عنها واستئجارها من خلال واجهة حديثة وسهلة الاستخدام. يدعم التطبيق صلاحيات مختلفة للمستخدمين والإداريين، حيث يمكن للمشرفين إدارة الكتب ورفع صور الأغلفة وتحديث حالة التوفر ومتابعة طلبات الاستئجار. كما يوفر البحث عن الكتب، وصفحات تفصيلية، وسجلًا لعمليات الاستئجار، مع استخدام SQLite للتخزين المحلي وRiverpod لإدارة الحالة بشكل مرن وقابل للتوسع.
+    images:
+      - /assets/images/projects/book1.png
+      - /assets/images/projects/book2.png
+    link: "https://github.com/AsimAlrimi/bookify.git"
+    tags:
+      - Flutter
+      - Dart
+      - SQLite
+      - Role-Based Access
+
+    year: 2024
+    link_type: github
+
+  - title: Search Algorithm Visualizer
+    description: تطبيق تفاعلي بلغة Python تم تطويره باستخدام Tkinter لعرض خوارزميات اجتياز الأشجار الثنائية من خلال رسوم متحركة لحظية وإبراز العقد أثناء التنفيذ. يوضح المشروع كيفية عمل خوارزميات البحث بالعرض (BFS) والبحث بالعمق (DFS) على بنية الشجرة الثنائية، مع إمكانية اختيار العقد المستهدفة ومتابعة خطوات التنفيذ بشكل مرئي عبر واجهة رسومية سهلة الاستخدام.
+    images:
+      - /assets/images/projects/bst1.png
+      - /assets/images/projects/bst2.png
+      - /assets/images/projects/bst3.png
+    link: "https://github.com/AsimAlrimi/search-algorithm-visualizer.git"
+    tags:
+      - Python
+      - Tkinter
+      - Algorithm Visualization
+    year: 2024
+    link_type: github

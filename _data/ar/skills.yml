@@ -1,0 +1,116 @@
+categories:
+  - name: لغات البرمجة
+    skills:
+      - name: Python
+        icon: brand-python
+        desc: لغتي الأساسية لتطوير الخلفية والأتمتة وكتابة السكربتات
+
+      - name: C#
+        icon: code
+        desc: أستخدمها في تطوير تطبيقات ASP.NET Core ومشاريع الويب
+
+      - name: Dart
+        icon: brand-flutter
+        desc: لغة Flutter لتطوير التطبيقات متعددة المنصات
+
+      - name: JavaScript
+        icon: brand-javascript
+        desc: لإضافة التفاعل والوظائف الديناميكية إلى تطبيقات الويب
+
+      - name: HTML و CSS
+        icon: brand-html5
+        desc: بناء واجهات ويب حديثة ومتجاوبة وسهلة الاستخدام
+
+  - name: الأطر والتقنيات
+    skills:
+      - name: ASP.NET Core
+        icon: server-2
+        desc: تطوير تطبيقات MVC وأنظمة المصادقة والواجهات البرمجية
+
+      - name: Flask
+        icon: flask
+        desc: إطار عمل خفيف لبناء الخدمات الخلفية والواجهات البرمجية
+
+      - name: Flutter
+        icon: device-mobile
+        desc: تطوير تطبيقات الجوال وسطح المكتب من قاعدة كود واحدة
+
+      - name: Tailwind CSS
+        icon: brand-tailwind
+        desc: إطار عمل لتنسيق الواجهات بسرعة ومرونة
+
+      - name: Bootstrap 5
+        icon: layout-grid
+        desc: بناء واجهات احترافية باستخدام مكونات جاهزة ومتجاوبة
+
+  - name: قواعد البيانات
+    skills:
+      - name: MySQL
+        icon: database
+        desc: تصميم قواعد البيانات وكتابة الاستعلامات وربطها بالتطبيقات
+
+      - name: SQLite
+        icon: database
+        desc: قاعدة بيانات خفيفة مناسبة للتطبيقات المحلية والمحمولة
+
+      - name: SQL Server
+        icon: database
+        desc: خبرة في تصميم قواعد البيانات وكتابة استعلامات T-SQL
+
+  - name: الواجهات البرمجية والأدوات
+    skills:
+      - name: REST APIs
+        icon: plug-connected
+        desc: تصميم وتطوير واجهات برمجية منظمة وسهلة التكامل
+
+      - name: Postman
+        icon: send
+        desc: اختبار الواجهات البرمجية وتحليل الاستجابات وتصحيح الأخطاء
+
+      - name: Git
+        icon: brand-git
+        desc: إدارة الإصدارات وتتبع التغييرات والعمل الجماعي
+
+      - name: GitHub
+        icon: brand-github
+        desc: استضافة المشاريع وإدارة المستودعات وطلبات الدمج
+
+  - name: المنصات
+    skills:
+      - name: Linux
+        icon: terminal-2
+        desc: العمل باستخدام سطر الأوامر وإدارة بيئات التطوير والخوادم
+
+      - name: Google Cloud Apigee
+        icon: cloud
+        desc: إدارة الواجهات البرمجية ومراقبتها عبر خدمات السحابة
+
+  - name: المفاهيم
+    skills:
+      - name: معمارية MVC
+        icon: hierarchy
+        desc: تنظيم التطبيق من خلال فصل المكونات والمسؤوليات
+
+      - name: التحكم بالوصول حسب الأدوار
+        icon: shield-lock
+        desc: إدارة الصلاحيات والتحكم في الوصول حسب أدوار المستخدمين
+
+      - name: المصادقة والتفويض
+        icon: lock
+        desc: بناء أنظمة تسجيل الدخول والتحقق من الصلاحيات
+
+      - name: التطوير متعدد المنصات
+        icon: devices
+        desc: تطوير تطبيقات تعمل على أكثر من منصة باستخدام قاعدة كود واحدة
+
+      - name: التصميم المتجاوب
+        icon: device-desktop
+        desc: تصميم واجهات تتكيف مع مختلف أحجام الشاشات
+
+      - name: البرمجة كائنية التوجه
+        icon: components
+        desc: تطبيق مبادئ البرمجة كائنية التوجه لبناء أنظمة قابلة للتطوير
+
+      - name: حل المشكلات
+        icon: puzzle
+        desc: تطوير مهارات حل المشكلات والخوارزميات وهياكل البيانات
