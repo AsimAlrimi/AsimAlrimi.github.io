@@ -16,7 +16,21 @@
     <link rel="icon" type="image/png" href="/assets/images/R1.png">
   </head>
   <body>
+      <div id="page-loader" class="fixed inset-0 z-9999 flex items-center justify-center bg-(--bg)">
+  <div class="w-8 h-8 border-2 border-white/10 border-t-(--accent) rounded-full animate-spin"></div>
+</div>
+
+<script>
+  window.addEventListener('load', function () {
+    const loader = document.getElementById('page-loader');
+    if (!loader) return;
+    loader.style.transition = 'opacity 0.4s ease';
+    loader.style.opacity = '0';
+    setTimeout(() => loader.remove(), 400);
+  });
+</script>
     
+      
 
 
 
@@ -117,8 +131,8 @@
       <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
       <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" class="hidden"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
     </button>
-    <button onclick="toggleLang()" class="hidden md:block text-[12px] font-medium text-white/60 hover:text-white px-2 py-1 rounded-lg tracking-wide transition-colors cursor-pointer bg-transparent border-none">
-      Ar
+    <button onclick="toggleLang()" class="hidden md:block text-[14px] font-medium text-white/60 hover:text-white px-2 py-1 rounded-lg tracking-wide transition-colors cursor-pointer bg-transparent border-none">
+      EN
     </button>
 
     <!-- Mobile: page title | spacer | hamburger | divider | theme | lang -->
@@ -222,8 +236,8 @@
       <svg id="icon-moon-m" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
       <svg id="icon-sun-m" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" class="hidden"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
     </button>
-    <button onclick="toggleLang()" class="md:hidden text-[12px] font-medium text-white/60 hover:text-white px-2 py-1 rounded-lg tracking-wide transition-colors cursor-pointer bg-transparent border-none">
-      Ar
+    <button onclick="toggleLang()" class="md:hidden text-[14px] font-medium text-white/60 hover:text-white px-2 py-1 rounded-lg tracking-wide transition-colors cursor-pointer bg-transparent border-none">
+       EN
     </button>
 
   </div>
@@ -231,7 +245,7 @@
 
 <div class="h-16"></div>
 
-    
+      
 <section id="projects-page" class="px-6">
 
   <!-- Header -->
@@ -254,44 +268,32 @@
                   hover:border-white/20 transition-all duration-300">
 
         <!-- Left: Image gallery -->
-        <div class="shrink-0 flex items-center justify-center px-4 py-4" dir="ltr">
+        <div class="shrink-0 flex items-center justify-center px-4 py-4 w-full lg:w-auto " dir="ltr">
           <div class="gallery relative rounded-2xl overflow-hidden
-            w-[220px] h-[180px]
-            sm:w-[300px] sm:h-40
-            md:w-[320px] md:h-60
+            w-full h-[220px]
+            sm:w-full sm:h-[260px]
+            md:w-full md:h-[300px]
             lg:w-[370px] lg:h-[300px]">
 
             <!-- Slides -->
             <div class="gallery-track absolute inset-0 flex" dir="ltr"
-                style="transition: transform 0.35s ease; width: 100%; height: 100%;">
+                 style="transition: transform 0.35s ease; width: 100%; height: 100%;">
 
               
 
               
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/back1.png" alt="Backdoor 1"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/back2.png" alt="Backdoor 2"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/back3.png" alt="Backdoor 3"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
@@ -366,14 +368,18 @@
             </p>
 
             <!-- Description -->
-            <p class="text-sm light:text-neutral-500 text-neutral-400 leading-relaxed font-text
+            <p class="desc-text text-sm light:text-neutral-500 text-neutral-400 leading-relaxed font-sans
                       line-clamp-3 md:line-clamp-none">
               منصة حديثة لعرض الأعمال والخدمات تم تطويرها باستخدام React وTailwind CSS لعرض المشاريع والحلول الرقمية من خلال واجهة نظيفة ومتجاوبة. تركز المنصة على تقديم تجربة مستخدم سلسة وهوية بصرية احترافية، مع أقسام تفاعلية وعروض للمشاريع والخدمات وصفحة تواصل مبسطة تساعد العملاء المحتملين على الوصول بسهولة. تم تصميمها بأسلوب عصري يعزز التفاعل وسهولة القراءة وإمكانية الوصول عبر أجهزة الحاسب والجوال.
             </p>
+            <button onclick="this.previousElementSibling.classList.toggle('line-clamp-3'); this.textContent = this.previousElementSibling.classList.contains('line-clamp-3') ? 'المزيد' : 'إخفاء';"
+                    class="md:hidden text-xs text-secondary font-sans mt-1 self-start bg-transparent border-none cursor-pointer pb-2">
+              المزيد
+            </button>
           </div>
 
           <!-- Bottom row: tags + links -->
-          <div class="flex items-end justify-between gap-3">
+          <div class="flex items-end justify-between gap-3 pt-5 sm:pt-0">
 
             <!-- Tags -->
             
@@ -406,12 +412,12 @@
             <!-- Links -->
             <div class="flex gap-1.5 shrink-0">
               
-              <a href="" target="_blank"
+              <a href="https://backdoor.sa/" target="_blank"
                 class="inline-flex items-center gap-1 text-[11px] px-2.5 py-1 rounded-full
-                        border border-blue-400/50 text-blue-400
-                        hover:bg-blue-400/10 transition-colors duration-150 font-sans whitespace-nowrap">
-                <svg class="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="3,2 13,8 3,14"/></svg>
-                Demo
+                        border border-emerald-500/50 text-emerald-500
+                        hover:bg-emerald-500/10 transition-colors duration-150 font-sans whitespace-nowrap">
+                <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8" cy="8" r="6"/><path d="M2 8h12M8 2c-2 2-2 8 0 12M8 2c2 2 2 8 0 12"/></svg>
+                نشط
               </a>
               
             </div>
@@ -428,44 +434,32 @@
                   hover:border-white/20 transition-all duration-300">
 
         <!-- Left: Image gallery -->
-        <div class="shrink-0 flex items-center justify-center px-4 py-4" dir="ltr">
+        <div class="shrink-0 flex items-center justify-center px-4 py-4 w-full lg:w-auto " dir="ltr">
           <div class="gallery relative rounded-2xl overflow-hidden
-            w-[220px] h-[180px]
-            sm:w-[300px] sm:h-40
-            md:w-[320px] md:h-60
+            w-full h-[220px]
+            sm:w-full sm:h-[260px]
+            md:w-full md:h-[300px]
             lg:w-[370px] lg:h-[300px]">
 
             <!-- Slides -->
             <div class="gallery-track absolute inset-0 flex" dir="ltr"
-                style="transition: transform 0.35s ease; width: 100%; height: 100%;">
+                 style="transition: transform 0.35s ease; width: 100%; height: 100%;">
 
               
 
               
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/nexa1.png" alt="NEXA 1"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/nexa2.png" alt="NEXA 2"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/nexa3.png" alt="NEXA 3"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
@@ -540,14 +534,18 @@
             </p>
 
             <!-- Description -->
-            <p class="text-sm light:text-neutral-500 text-neutral-400 leading-relaxed font-text
+            <p class="desc-text text-sm light:text-neutral-500 text-neutral-400 leading-relaxed font-sans
                       line-clamp-3 md:line-clamp-none">
               منصة أعمال حديثة مطورة باستخدام ASP.NET Core لعرض الحلول الرقمية والخدمات الاحترافية ومشاريع الشركة من خلال تجربة مستخدم نظيفة ومتجاوبة. تتضمن صفحة رئيسية ديناميكية تستعرض الخدمات والمشاريع وعناصر تعزز الثقة ونماذج تواصل تساعد الشركات على جذب العملاء المحتملين. كما تحتوي على لوحة تحكم آمنة لإدارة المشاريع والمحتوى والخدمات المعروضة من خلال واجهة إدارة مبسطة.
             </p>
+            <button onclick="this.previousElementSibling.classList.toggle('line-clamp-3'); this.textContent = this.previousElementSibling.classList.contains('line-clamp-3') ? 'المزيد' : 'إخفاء';"
+                    class="md:hidden text-xs text-secondary font-sans mt-1 self-start bg-transparent border-none cursor-pointer pb-2">
+              المزيد
+            </button>
           </div>
 
           <!-- Bottom row: tags + links -->
-          <div class="flex items-end justify-between gap-3">
+          <div class="flex items-end justify-between gap-3 pt-5 sm:pt-0">
 
             <!-- Tags -->
             
@@ -587,12 +585,12 @@
             <!-- Links -->
             <div class="flex gap-1.5 shrink-0">
               
-              <a href="" target="_blank"
+              <a href="https://nexa-nzgc.onrender.com/" target="_blank"
                 class="inline-flex items-center gap-1 text-[11px] px-2.5 py-1 rounded-full
                         border border-blue-400/50 text-blue-400
                         hover:bg-blue-400/10 transition-colors duration-150 font-sans whitespace-nowrap">
-                <svg class="w-3 h-3" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="3,2 13,8 3,14"/></svg>
-                Demo
+                <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="3,2 13,8 3,14"/></svg>
+                معاينة
               </a>
               
             </div>
@@ -609,35 +607,27 @@
                   hover:border-white/20 transition-all duration-300">
 
         <!-- Left: Image gallery -->
-        <div class="shrink-0 flex items-center justify-center px-4 py-4" dir="ltr">
+        <div class="shrink-0 flex items-center justify-center px-4 py-4 w-full lg:w-auto " dir="ltr">
           <div class="gallery relative rounded-2xl overflow-hidden
-            w-[220px] h-[180px]
-            sm:w-[300px] sm:h-40
-            md:w-[320px] md:h-60
+            w-full h-[220px]
+            sm:w-full sm:h-[260px]
+            md:w-full md:h-[300px]
             lg:w-[370px] lg:h-[300px]">
 
             <!-- Slides -->
             <div class="gallery-track absolute inset-0 flex" dir="ltr"
-                style="transition: transform 0.35s ease; width: 100%; height: 100%;">
+                 style="transition: transform 0.35s ease; width: 100%; height: 100%;">
 
               
 
               
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/sooq1.png" alt="SooqLink 1"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/sooq2.png" alt="SooqLink 2"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
@@ -704,14 +694,18 @@
             </p>
 
             <!-- Description -->
-            <p class="text-sm light:text-neutral-500 text-neutral-400 leading-relaxed font-text
+            <p class="desc-text text-sm light:text-neutral-500 text-neutral-400 leading-relaxed font-sans
                       line-clamp-3 md:line-clamp-none">
               منصة تجارة جملة بين الشركات (B2B) قيد التطوير، تهدف إلى ربط البائعين بالمشترين مثل متاجر البقالة والمطاعم والفنادق والمقاهي ومحلات القرطاسية والأفراد عبر سوق إلكتروني موحد. تم تطويرها باستخدام ASP.NET Core وبنية متعددة الطبقات مع نظام صلاحيات للأدمن والبائعين والمشترين. تشمل إدارة المنتجات والمخزون، والطلبات بالجملة، وسلة التسوق، وتتبع الطلبات، ولوحات التحليلات، وإدارة التصنيفات، وأدوات الإشراف والإدارة.
             </p>
+            <button onclick="this.previousElementSibling.classList.toggle('line-clamp-3'); this.textContent = this.previousElementSibling.classList.contains('line-clamp-3') ? 'المزيد' : 'إخفاء';"
+                    class="md:hidden text-xs text-secondary font-sans mt-1 self-start bg-transparent border-none cursor-pointer pb-2">
+              المزيد
+            </button>
           </div>
 
           <!-- Bottom row: tags + links -->
-          <div class="flex items-end justify-between gap-3">
+          <div class="flex items-end justify-between gap-3 pt-5 sm:pt-0">
 
             <!-- Tags -->
             
@@ -762,7 +756,7 @@
                 class="inline-flex items-center gap-1 text-[11px] px-2.5 py-1 rounded-full
                         border border-white/20 text-neutral-400
                         hover:bg-white/10 transition-colors duration-150 font-sans whitespace-nowrap">
-                <svg class="w-3 h-3" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
                 GitHub
               </a>
               
@@ -780,62 +774,42 @@
                   hover:border-white/20 transition-all duration-300">
 
         <!-- Left: Image gallery -->
-        <div class="shrink-0 flex items-center justify-center px-4 py-4" dir="ltr">
+        <div class="shrink-0 flex items-center justify-center px-4 py-4 w-full lg:w-auto " dir="ltr">
           <div class="gallery relative rounded-2xl overflow-hidden
-            w-[220px] h-[180px]
-            sm:w-[300px] sm:h-40
-            md:w-[320px] md:h-60
+            w-full h-[220px]
+            sm:w-full sm:h-[260px]
+            md:w-full md:h-[300px]
             lg:w-[370px] lg:h-[300px]">
 
             <!-- Slides -->
             <div class="gallery-track absolute inset-0 flex" dir="ltr"
-                style="transition: transform 0.35s ease; width: 100%; height: 100%;">
+                 style="transition: transform 0.35s ease; width: 100%; height: 100%;">
 
               
 
               
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/blood1.png" alt="Blood Line 1"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/blood2.png" alt="Blood Line 2"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/blood3.png" alt="Blood Line 3"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/blood4.png" alt="Blood Line 4"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/blood5.png" alt="Blood Line 5"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
@@ -926,14 +900,18 @@
             </p>
 
             <!-- Description -->
-            <p class="text-sm light:text-neutral-500 text-neutral-400 leading-relaxed font-text
+            <p class="desc-text text-sm light:text-neutral-500 text-neutral-400 leading-relaxed font-sans
                       line-clamp-3 md:line-clamp-none">
               منصة متكاملة لإدارة التبرع بالدم تعتمد على بنية العميل والخادم، وتهدف إلى ربط المتبرعين بالمستشفيات وبنوك الدم عبر تطبيقات للجوال وسطح المكتب. تم تطويرها باستخدام Flutter وFlask وREST APIs لتسهيل حجز المواعيد وتتبع التبرعات وإدارة حملات التبرع والتواصل مع المتبرعين. تتضمن نظام مصادقة JWT وصلاحيات متعددة للمستخدمين، وتكاملاً مع خرائط Google لتحديد أقرب مراكز التبرع، وإشعارات للحالات الطارئة، وسجلًا للتبرعات، واختبارًا آمناً للواجهات البرمجية باستخدام Postman.
             </p>
+            <button onclick="this.previousElementSibling.classList.toggle('line-clamp-3'); this.textContent = this.previousElementSibling.classList.contains('line-clamp-3') ? 'المزيد' : 'إخفاء';"
+                    class="md:hidden text-xs text-secondary font-sans mt-1 self-start bg-transparent border-none cursor-pointer pb-2">
+              المزيد
+            </button>
           </div>
 
           <!-- Bottom row: tags + links -->
-          <div class="flex items-end justify-between gap-3">
+          <div class="flex items-end justify-between gap-3 pt-5 sm:pt-0">
 
             <!-- Tags -->
             
@@ -998,7 +976,7 @@
                 class="inline-flex items-center gap-1 text-[11px] px-2.5 py-1 rounded-full
                         border border-white/20 text-neutral-400
                         hover:bg-white/10 transition-colors duration-150 font-sans whitespace-nowrap">
-                <svg class="w-3 h-3" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
                 GitHub
               </a>
               
@@ -1016,35 +994,27 @@
                   hover:border-white/20 transition-all duration-300">
 
         <!-- Left: Image gallery -->
-        <div class="shrink-0 flex items-center justify-center px-4 py-4" dir="ltr">
+        <div class="shrink-0 flex items-center justify-center px-4 py-4 w-full lg:w-auto " dir="ltr">
           <div class="gallery relative rounded-2xl overflow-hidden
-            w-[220px] h-[180px]
-            sm:w-[300px] sm:h-40
-            md:w-[320px] md:h-60
+            w-full h-[220px]
+            sm:w-full sm:h-[260px]
+            md:w-full md:h-[300px]
             lg:w-[370px] lg:h-[300px]">
 
             <!-- Slides -->
             <div class="gallery-track absolute inset-0 flex" dir="ltr"
-                style="transition: transform 0.35s ease; width: 100%; height: 100%;">
+                 style="transition: transform 0.35s ease; width: 100%; height: 100%;">
 
               
 
               
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/book1.png" alt="Bookify 1"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/book2.png" alt="Bookify 2"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
@@ -1111,14 +1081,18 @@
             </p>
 
             <!-- Description -->
-            <p class="text-sm light:text-neutral-500 text-neutral-400 leading-relaxed font-text
+            <p class="desc-text text-sm light:text-neutral-500 text-neutral-400 leading-relaxed font-sans
                       line-clamp-3 md:line-clamp-none">
               تطبيق لتأجير الكتب مبني باستخدام Flutter يتيح للمستخدمين تصفح الكتب والبحث عنها واستئجارها من خلال واجهة حديثة وسهلة الاستخدام. يدعم التطبيق صلاحيات مختلفة للمستخدمين والإداريين، حيث يمكن للمشرفين إدارة الكتب ورفع صور الأغلفة وتحديث حالة التوفر ومتابعة طلبات الاستئجار. كما يوفر البحث عن الكتب، وصفحات تفصيلية، وسجلًا لعمليات الاستئجار، مع استخدام SQLite للتخزين المحلي وRiverpod لإدارة الحالة بشكل مرن وقابل للتوسع.
             </p>
+            <button onclick="this.previousElementSibling.classList.toggle('line-clamp-3'); this.textContent = this.previousElementSibling.classList.contains('line-clamp-3') ? 'المزيد' : 'إخفاء';"
+                    class="md:hidden text-xs text-secondary font-sans mt-1 self-start bg-transparent border-none cursor-pointer pb-2">
+              المزيد
+            </button>
           </div>
 
           <!-- Bottom row: tags + links -->
-          <div class="flex items-end justify-between gap-3">
+          <div class="flex items-end justify-between gap-3 pt-5 sm:pt-0">
 
             <!-- Tags -->
             
@@ -1162,7 +1136,7 @@
                 class="inline-flex items-center gap-1 text-[11px] px-2.5 py-1 rounded-full
                         border border-white/20 text-neutral-400
                         hover:bg-white/10 transition-colors duration-150 font-sans whitespace-nowrap">
-                <svg class="w-3 h-3" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
                 GitHub
               </a>
               
@@ -1180,44 +1154,32 @@
                   hover:border-white/20 transition-all duration-300">
 
         <!-- Left: Image gallery -->
-        <div class="shrink-0 flex items-center justify-center px-4 py-4" dir="ltr">
+        <div class="shrink-0 flex items-center justify-center px-4 py-4 w-full lg:w-auto " dir="ltr">
           <div class="gallery relative rounded-2xl overflow-hidden
-            w-[220px] h-[180px]
-            sm:w-[300px] sm:h-40
-            md:w-[320px] md:h-60
+            w-full h-[220px]
+            sm:w-full sm:h-[260px]
+            md:w-full md:h-[300px]
             lg:w-[370px] lg:h-[300px]">
 
             <!-- Slides -->
             <div class="gallery-track absolute inset-0 flex" dir="ltr"
-                style="transition: transform 0.35s ease; width: 100%; height: 100%;">
+                 style="transition: transform 0.35s ease; width: 100%; height: 100%;">
 
               
 
               
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/bst1.png" alt="Search Algorithm Visualizer 1"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/bst2.png" alt="Search Algorithm Visualizer 2"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
                 
-                  <div class="shrink-0
-                    w-[220px] h-[180px]
-                    sm:w-[300px] sm:h-40
-                    md:w-[320px] md:h-60
-                    lg:w-[370px] lg:h-[300px]">
+                  <div class="shrink-0 w-full h-full">
                     <img src="/assets/images/projects/bst3.png" alt="Search Algorithm Visualizer 3"
                          style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   </div>
@@ -1292,14 +1254,18 @@
             </p>
 
             <!-- Description -->
-            <p class="text-sm light:text-neutral-500 text-neutral-400 leading-relaxed font-text
+            <p class="desc-text text-sm light:text-neutral-500 text-neutral-400 leading-relaxed font-sans
                       line-clamp-3 md:line-clamp-none">
               تطبيق تفاعلي بلغة Python تم تطويره باستخدام Tkinter لعرض خوارزميات اجتياز الأشجار الثنائية من خلال رسوم متحركة لحظية وإبراز العقد أثناء التنفيذ. يوضح المشروع كيفية عمل خوارزميات البحث بالعرض (BFS) والبحث بالعمق (DFS) على بنية الشجرة الثنائية، مع إمكانية اختيار العقد المستهدفة ومتابعة خطوات التنفيذ بشكل مرئي عبر واجهة رسومية سهلة الاستخدام.
             </p>
+            <button onclick="this.previousElementSibling.classList.toggle('line-clamp-3'); this.textContent = this.previousElementSibling.classList.contains('line-clamp-3') ? 'المزيد' : 'إخفاء';"
+                    class="md:hidden text-xs text-secondary font-sans mt-1 self-start bg-transparent border-none cursor-pointer pb-2">
+              المزيد
+            </button>
           </div>
 
           <!-- Bottom row: tags + links -->
-          <div class="flex items-end justify-between gap-3">
+          <div class="flex items-end justify-between gap-3 pt-5 sm:pt-0">
 
             <!-- Tags -->
             
@@ -1336,7 +1302,7 @@
                 class="inline-flex items-center gap-1 text-[11px] px-2.5 py-1 rounded-full
                         border border-white/20 text-neutral-400
                         hover:bg-white/10 transition-colors duration-150 font-sans whitespace-nowrap">
-                <svg class="w-3 h-3" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+                <svg class="w-4 h-4" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
                 GitHub
               </a>
               
@@ -1351,8 +1317,8 @@
 
 </section>
 
-    
-    <footer style="padding:2rem 2.5rem; display:flex; align-items:center; justify-content:space-between; border-top:0.5px solid rgb(75 85 99); font-family:'Space Grotesk',sans-serif;">
+      
+      <footer style="padding:2rem 2.5rem; display:flex; align-items:center; justify-content:space-between; border-top:0.5px solid rgb(75 85 99); font-family:'Space Grotesk',sans-serif;">
   
   <span style="font-size:13px;">© 2026 Asim Alrimi</span>
 
@@ -1375,6 +1341,6 @@
   </div>
 
 </footer>
-    <script src="/assets/js/main.js"></script>
+      <script src="/assets/js/main.js"></script>
   </body>
 </html>

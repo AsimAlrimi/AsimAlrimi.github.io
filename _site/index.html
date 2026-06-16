@@ -16,7 +16,21 @@
     <link rel="icon" type="image/png" href="/assets/images/R1.png">
   </head>
   <body>
+      <div id="page-loader" class="fixed inset-0 z-9999 flex items-center justify-center bg-(--bg)">
+  <div class="w-8 h-8 border-2 border-white/10 border-t-(--accent) rounded-full animate-spin"></div>
+</div>
+
+<script>
+  window.addEventListener('load', function () {
+    const loader = document.getElementById('page-loader');
+    if (!loader) return;
+    loader.style.transition = 'opacity 0.4s ease';
+    loader.style.opacity = '0';
+    setTimeout(() => loader.remove(), 400);
+  });
+</script>
     
+      
 
 
 
@@ -117,8 +131,8 @@
       <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
       <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" class="hidden"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
     </button>
-    <button onclick="toggleLang()" class="hidden md:block text-[12px] font-medium text-white/60 hover:text-white px-2 py-1 rounded-lg tracking-wide transition-colors cursor-pointer bg-transparent border-none">
-      En
+    <button onclick="toggleLang()" class="hidden md:block text-[14px] font-medium text-white/60 hover:text-white px-2 py-1 rounded-lg tracking-wide transition-colors cursor-pointer bg-transparent border-none">
+      عربي
     </button>
 
     <!-- Mobile: page title | spacer | hamburger | divider | theme | lang -->
@@ -222,8 +236,8 @@
       <svg id="icon-moon-m" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z"/></svg>
       <svg id="icon-sun-m" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" class="hidden"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
     </button>
-    <button onclick="toggleLang()" class="md:hidden text-[12px] font-medium text-white/60 hover:text-white px-2 py-1 rounded-lg tracking-wide transition-colors cursor-pointer bg-transparent border-none">
-      En
+    <button onclick="toggleLang()" class="md:hidden text-[14px] font-medium text-white/60 hover:text-white px-2 py-1 rounded-lg tracking-wide transition-colors cursor-pointer bg-transparent border-none">
+       عربي
     </button>
 
   </div>
@@ -231,7 +245,7 @@
 
 <div class="h-16"></div>
 
-    
+      
 <!-- Hero Section -->
 <section id="hero-section" class="px-6">
   
@@ -535,88 +549,67 @@
     
 
       <a href="/aboutme"
-   class="group rounded-2xl overflow-hidden border-t border-white/10 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+   class="group flex flex-row items-center gap-4 px-4 py-3.5 rounded-2xl
+          border border-white/10 light:bg-primary/8 bg-white/5
+          light:hover:bg-primary/8 hover:bg-white/5 hover:border-white/20
+          transition-all duration-200 min-w-0">
 
-  <div class="p-5 min-h-[120px] flex flex-col gap-2 light:bg-primary/8 bg-white/5 backdrop-blur-lg border-b border-white/10">
+  <i class="ti ti-user text-3xl lg:text-5xl shrink-0
+            text-(--text) opacity-60
+            group-hover:opacity-100 transition-opacity duration-200"></i>
 
-    <div class="flex justify-between items-baseline">
-      <span class="font-semibold text-lg  font-sans">
-        About Me
-      </span>
-    </div>
-
-    <p class="text-sm light:text-neutral-500  text-neutral-400 leading-relaxed  font-sans">
+  <div class="flex flex-col gap-0.5 min-w-0 flex-1">
+    <span class="text-base font-sans text-(--text) leading-snug font-sans pb-1">
+      About Me
+    </span>
+    <span class="text-xs light:text-neutral-500 text-neutral-400 leading-snug font-sans">
       Who I am, what I've built, and what drives me.
-    </p>
-
+    </span>
   </div>
-
-  <!-- <div class="overflow-hidden h-56 light:bg-primary/8 bg-neutral-900">
-
-    <img src="/assets/images/profileImage.jpg"
-         alt="About Me"
-         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-
-  </div> -->
-
 </a>
 
     
 
       <a href="/services"
-   class="group rounded-2xl overflow-hidden border-t border-white/10 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+   class="group flex flex-row items-center gap-4 px-4 py-3.5 rounded-2xl
+          border border-white/10 light:bg-primary/8 bg-white/5
+          light:hover:bg-primary/8 hover:bg-white/5 hover:border-white/20
+          transition-all duration-200 min-w-0">
 
-  <div class="p-5 min-h-[120px] flex flex-col gap-2 light:bg-primary/8 bg-white/5 backdrop-blur-lg border-b border-white/10">
+  <i class="ti ti-briefcase text-3xl lg:text-5xl shrink-0
+            text-(--text) opacity-60
+            group-hover:opacity-100 transition-opacity duration-200"></i>
 
-    <div class="flex justify-between items-baseline">
-      <span class="font-semibold text-lg  font-sans">
-        Services
-      </span>
-    </div>
-
-    <p class="text-sm light:text-neutral-500  text-neutral-400 leading-relaxed  font-sans">
+  <div class="flex flex-col gap-0.5 min-w-0 flex-1">
+    <span class="text-base font-sans text-(--text) leading-snug font-sans pb-1">
+      Services
+    </span>
+    <span class="text-xs light:text-neutral-500 text-neutral-400 leading-snug font-sans">
       What I offer — from full-stack development to technical consulting.
-    </p>
-
+    </span>
   </div>
-
-  <!-- <div class="overflow-hidden h-56 light:bg-primary/8 bg-neutral-900">
-
-    <img src="/assets/images/profileImage.jpg"
-         alt="Services"
-         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-
-  </div> -->
-
 </a>
 
     
 
       <a href="/aboutme#Contact"
-   class="group rounded-2xl overflow-hidden border-t border-white/10 hover:shadow-lg transition-shadow duration-300 flex flex-col">
+   class="group flex flex-row items-center gap-4 px-4 py-3.5 rounded-2xl
+          border border-white/10 light:bg-primary/8 bg-white/5
+          light:hover:bg-primary/8 hover:bg-white/5 hover:border-white/20
+          transition-all duration-200 min-w-0">
 
-  <div class="p-5 min-h-[120px] flex flex-col gap-2 light:bg-primary/8 bg-white/5 backdrop-blur-lg border-b border-white/10">
+  <i class="ti ti-mail text-3xl lg:text-5xl shrink-0
+            text-(--text) opacity-60
+            group-hover:opacity-100 transition-opacity duration-200"></i>
 
-    <div class="flex justify-between items-baseline">
-      <span class="font-semibold text-lg  font-sans">
-        Contact
-      </span>
-    </div>
-
-    <p class="text-sm light:text-neutral-500  text-neutral-400 leading-relaxed  font-sans">
+  <div class="flex flex-col gap-0.5 min-w-0 flex-1">
+    <span class="text-base font-sans text-(--text) leading-snug font-sans pb-1">
+      Contact
+    </span>
+    <span class="text-xs light:text-neutral-500 text-neutral-400 leading-snug font-sans">
       Have a project in mind? Let's talk.
-    </p>
-
+    </span>
   </div>
-
-  <!-- <div class="overflow-hidden h-56 light:bg-primary/8 bg-neutral-900">
-
-    <img src="/assets/images/profileImage.jpg"
-         alt="Contact"
-         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-
-  </div> -->
-
 </a>
 
     
@@ -626,8 +619,8 @@
 </section>
 
 
-    
-    <footer style="padding:2rem 2.5rem; display:flex; align-items:center; justify-content:space-between; border-top:0.5px solid rgb(75 85 99); font-family:'Space Grotesk',sans-serif;">
+      
+      <footer style="padding:2rem 2.5rem; display:flex; align-items:center; justify-content:space-between; border-top:0.5px solid rgb(75 85 99); font-family:'Space Grotesk',sans-serif;">
   
   <span style="font-size:13px;">© 2026 Asim Alrimi</span>
 
@@ -650,6 +643,6 @@
   </div>
 
 </footer>
-    <script src="/assets/js/main.js"></script>
+      <script src="/assets/js/main.js"></script>
   </body>
 </html>

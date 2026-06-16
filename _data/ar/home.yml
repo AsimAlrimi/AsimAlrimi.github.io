@@ -47,15 +47,15 @@ more_section:
 more:
   - title: عنّي
     description: من أنا، وما الذي بنيته، وما الذي يحرّكني.
-    image: /assets/images/profileImage.jpg
+    icon: user
     link: /ar/aboutme
 
   - title: الخدمات
     description: ما أقدّمه — من تطوير فول-ستاك إلى الاستشارات التقنية.
-    image: /assets/images/profileImage.jpg
+    icon: briefcase
     link: /ar/services
 
   - title: تواصل معي
     description: هل لديك مشروع في ذهنك؟ لنتحدث.
-    image: /assets/images/profileImage.jpg
+    icon: mail
     link: /ar/aboutme#Contact

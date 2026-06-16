@@ -48,15 +48,15 @@ more_section:
 more:
   - title: About Me
     description: Who I am, what I've built, and what drives me.
-    image: /assets/images/profileImage.jpg
     link: /aboutme
+    icon: user
 
   - title: Services
     description: What I offer — from full-stack development to technical consulting.
-    image: /assets/images/profileImage.jpg
     link: /services
+    icon: briefcase
 
   - title: Contact
     description: Have a project in mind? Let's talk.
-    image: /assets/images/profileImage.jpg
     link: /aboutme#Contact
+    icon: mail

@@ -5,13 +5,13 @@ items:
       - /assets/images/projects/back1.png
       - /assets/images/projects/back2.png
       - /assets/images/projects/back3.png
-    link: ""
+    link: "https://backdoor.sa/"
     tags:
       - React
       - Tailwind CSS
       - Responsive Design
     year: 2025
-    link_type: demo
+    link_type: live
 
   - title: NEXA
     description: منصة أعمال حديثة مطورة باستخدام ASP.NET Core لعرض الحلول الرقمية والخدمات الاحترافية ومشاريع الشركة من خلال تجربة مستخدم نظيفة ومتجاوبة. تتضمن صفحة رئيسية ديناميكية تستعرض الخدمات والمشاريع وعناصر تعزز الثقة ونماذج تواصل تساعد الشركات على جذب العملاء المحتملين. كما تحتوي على لوحة تحكم آمنة لإدارة المشاريع والمحتوى والخدمات المعروضة من خلال واجهة إدارة مبسطة.
@@ -19,7 +19,7 @@ items:
       - /assets/images/projects/nexa1.png
       - /assets/images/projects/nexa2.png
       - /assets/images/projects/nexa3.png
-    link: ""
+    link: "https://nexa-nzgc.onrender.com/"
     tags:
       - ASP.NET Core
       - MVC

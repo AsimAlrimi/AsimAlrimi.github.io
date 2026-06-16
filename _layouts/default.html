@@ -16,11 +16,13 @@
     <link rel="icon" type="image/png" href="{{ '/assets/images/R1.png' | relative_url }}">
   </head>
   <body>
-    {% include header.html %}
-
-    {{ content }}
+      {% include loader.html %}
     
-    {% include footer.html %}
-    <script src="/assets/js/main.js"></script>
+      {% include header.html %}
+
+      {{ content }}
+      
+      {% include footer.html %}
+      <script src="/assets/js/main.js"></script>
   </body>
 </html>
